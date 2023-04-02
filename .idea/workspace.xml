@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c701fd6-96b8-4734-a23d-a87473ccc9dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/BruteforceMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/MachineFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/StatisticAnalysisMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/OperatingData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/SelectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/SignsContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSyntax.FinalProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/BruteforceMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/BruteforceMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/StatisticAnalysisMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/StatisticAnalysisMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/UsingKeyMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/UsingKeyMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/SignsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/SignsContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,7 @@
       <module name="JavaSyntaxFinalProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CryptanalyzerConsoleVersion.*" />
+          <option name="PATTERN" value="CryptanalyzerConsoleVersion.CryptoMachine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,20 +76,5 @@
       <updated>1680358023833</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/SelectionUtils.java</url>
-          <line>43</line>
-          <properties class="CryptanalyzerConsoleVersion.SelectionUtils" method="getOperatedFilePath">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

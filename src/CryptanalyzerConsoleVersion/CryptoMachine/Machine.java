@@ -2,4 +2,9 @@ package CryptanalyzerConsoleVersion.CryptoMachine;
 
 import CryptanalyzerConsoleVersion.OperatingData;
 
-public interface Machine {}
+import java.io.IOException;
+
+public interface Machine {
+
+    public void operate() throws IOException;
+}

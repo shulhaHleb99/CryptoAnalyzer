@@ -15,6 +15,7 @@ public class Main {
 
         data = new OperatingData(SelectionUtils.modeSelection(), SelectionUtils.getOperatedFilePath());
         machine = MachineFactory.getProperMachine(data);
+        machine.operate();
 
     }
 

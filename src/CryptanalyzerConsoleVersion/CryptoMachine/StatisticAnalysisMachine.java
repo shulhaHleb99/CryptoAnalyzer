@@ -2,6 +2,8 @@ package CryptanalyzerConsoleVersion.CryptoMachine;
 
 import CryptanalyzerConsoleVersion.OperatingData;
 
+import java.io.IOException;
+
 class StatisticAnalysisMachine implements Machine {
 
     OperatingData opData;
@@ -9,4 +11,6 @@ class StatisticAnalysisMachine implements Machine {
     StatisticAnalysisMachine(OperatingData data) {
         opData = data;
     }
+
+    public void operate() throws IOException {}
 }
