@@ -10,6 +10,7 @@ import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
+// Утильный класс. Содержит методы получения входных данных
 class SelectionUtils {
 
     public static BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
@@ -17,6 +18,7 @@ class SelectionUtils {
     private SelectionUtils() {
     }
 
+    // Метод выбора режима работы
     static int modeSelection() throws IOException {
 
         System.out.println("Please, select the operating mode (Enter point number):" +
@@ -41,6 +43,7 @@ class SelectionUtils {
         }
     }
 
+    // Метод введения пути оперируемого файла
     static String getOperatedFilePath() throws IOException {
         String filePath = null;
         System.out.println("Please, enter path of file to be operated");
@@ -58,6 +61,8 @@ class SelectionUtils {
         return filePath;
     }
 
+
+    // Метод выбора способа расшифровки
     static int decryptionModeSelection() throws IOException {
         String temp = null;
 
@@ -89,6 +94,7 @@ class SelectionUtils {
         }
     }
 
+    // Выбор ключа
     static int getKey() throws IOException {
         int key;
         System.out.println("Please, enter the encryption key");
@@ -107,6 +113,7 @@ class SelectionUtils {
         }
     }
 
+    // Метод получения файла примера текста
     static String getTextSamplePath() throws IOException {
         String samplePath = null;
         System.out.print("Please, enter path of the text sample");

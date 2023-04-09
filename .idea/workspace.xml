@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c701fd6-96b8-4734-a23d-a87473ccc9dd" name="Changes" comment="using key machine finalized">
-      <change afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/BruteforceMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/BruteforceMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/MachineFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/MachineFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/SignsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/SignsContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/StatisticAnalysisMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/StatisticAnalysisMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/UsingKeyMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/UsingKeyMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/OperatingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/OperatingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/SelectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/SelectionUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Глеб/IdeaProjects/JavaSyntax.FinalProject"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Глеб/IdeaProjects/JavaSyntax.FinalProject&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CryptanalyzerConsoleVersion.Main" />
@@ -103,7 +107,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CryptanalyzerConsoleVersion/CryptoMachine/UsingKeyMachine.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -4,6 +4,7 @@ import CryptanalyzerConsoleVersion.OperatingData;
 
 public class MachineFactory {
 
+    // В зависимости от выполняемой логики возращает подходящий вариант интерфейса Machine
     public static Machine getProperMachine(OperatingData opData) {
         Machine machine = null;
 

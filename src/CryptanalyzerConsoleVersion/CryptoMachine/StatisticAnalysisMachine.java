@@ -23,6 +23,7 @@ class StatisticAnalysisMachine implements Machine {
 
     public void operate() throws IOException {
 
+        //
         Path sourceFilePath = Path.of(opData.getOperatedFilePath());
         Path targetFilePath = Utils.createTargetFile(sourceFilePath.toString(), "_ENCRYPTEDStat");
 

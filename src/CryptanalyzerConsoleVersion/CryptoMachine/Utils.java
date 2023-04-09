@@ -9,10 +9,12 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
 
+// Утильный класс. Сожержит методы, необходимые для работы классов-наследников Machine
 class Utils {
 
     private Utils() {}
 
+    // Создает файл в той же директории, что и исходный файл. Генерирует ему новое имя. Возвращает его путь
     static Path createTargetFile(String sourceFilePath, String insertion) throws IOException {
         Path targetFilePath = Path.of(sourceFilePath.substring(0, sourceFilePath.lastIndexOf(".")) +
                 "_"+ insertion + sourceFilePath.substring(sourceFilePath.lastIndexOf(".")));
@@ -32,6 +34,7 @@ class Utils {
         return targetFilePath;
     }
 
+    // Генерирует новое имя файла на основе старого. Применяется, если файл уже существует
     private static String getNewFileName(String baseString, int num) {
         String firstPart = baseString.toString().substring(0, baseString.toString().lastIndexOf(".")) +
                 "(";
@@ -40,6 +43,8 @@ class Utils {
         return  firstPart + num + secondPart;
     }
 
+    // Читает содержимое файла, на его основе генерирует мапу "символ" - "кол-во раз, которое он встретился в тексте.
+    // На основе мапы строит новую типа "символ" - "процент встречаемости". Возвращает ее.
     static TreeMap<Character, Double> getSignRateMap (String file) throws IOException {
         Path filePath = Path.of(file);
 
@@ -65,6 +70,8 @@ class Utils {
         return signRate;
     }
 
+    // Ищет в TreeMap sampleSignRate пару с ближайшим к Double rate значением.
+    // Возвращает ключ этой пары
     static Character getCloserChar(Double rate, TreeMap<Character, Double> sampleSignRate) {
         Character key = null;
         Double difference = Double.MAX_VALUE;

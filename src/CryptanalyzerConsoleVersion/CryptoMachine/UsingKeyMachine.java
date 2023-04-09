@@ -18,6 +18,7 @@ class UsingKeyMachine implements Machine {
         opData = data;
     }
 
+    //
     public void operate() throws IOException {
         int key;
         String insertion;
