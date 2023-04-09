@@ -21,7 +21,10 @@ class SignsContainer {
         add(' ');
     }};
 
-    private SignsContainer() {
+    private SignsContainer() {}
+
+    static int getSignsArraySize() {
+        return signs.size();
     }
 
     static char rotate(char rotatableChar, int key) {
@@ -36,5 +39,7 @@ class SignsContainer {
         Collections.rotate(copySigns, key);
         return copySigns.get(position);
     }
+
+
 
 }

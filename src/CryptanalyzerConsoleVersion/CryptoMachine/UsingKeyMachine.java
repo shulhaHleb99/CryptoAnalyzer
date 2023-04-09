@@ -3,47 +3,48 @@ package CryptanalyzerConsoleVersion.CryptoMachine;
 import CryptanalyzerConsoleVersion.OperatingData;
 
 import java.io.*;
+import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Locale;
 
 class UsingKeyMachine implements Machine {
 
-    OperatingData opData;
+    private OperatingData opData;
+    private static final String ENCRYPTED = "ENCRYPTED";
+    private static final String DECRYPTED = "DECRYPTED";
 
     UsingKeyMachine(OperatingData data) {
         opData = data;
     }
 
     public void operate() throws IOException {
+        int key;
+        String insertion;
+
         if (opData.getOperatingMode() == 1) {
-            encrypt();
+            key = opData.getKey();
+            insertion = ENCRYPTED;
         } else {
-            decrypt();
+            key = -opData.getKey();
+            insertion = DECRYPTED;
         }
-    }
 
-    private void encrypt() throws IOException {
         Path sourceFilePath = Path.of(opData.getOperatedFilePath());
-
-        Path targetFilePath = Path.of(opData.getOperatedFilePath().substring(0, opData.getOperatedFilePath().lastIndexOf(".")) +
-                                "_ENCRYPTED" + opData.getOperatedFilePath().substring(opData.getOperatedFilePath().lastIndexOf(".")));
-
-        Files.createFile(targetFilePath);
-
+        Path targetFilePath = Utils.createTargetFile(sourceFilePath.toString(), insertion);
 
         String fileContent = Files.readString(sourceFilePath);
-        fileContent.toUpperCase(new Locale("ru", "RU"));
+        fileContent = fileContent.toUpperCase(new Locale("ru", "RU"));
         String encryptedFileContent = "";
         for (char ch: fileContent.toCharArray()) {
-            encryptedFileContent += SignsContainer.rotate(ch, opData.getKey());
+            encryptedFileContent += SignsContainer.rotate(ch, key);
         }
 
         Files.writeString(targetFilePath, encryptedFileContent);
-    }
 
-    private void decrypt() {
-
+        System.out.println("File successfully " + insertion);
+        System.out.println("File was written at:");
+        System.out.println(targetFilePath);
     }
 
 }
