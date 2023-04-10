@@ -36,6 +36,8 @@ public class OperatingData {
         if (decryptionMode == 3) {
             textSamplePath = SelectionUtils.getTextSamplePath();
         }
+
+        SelectionUtils.bReader.close();
     }
 
     public int getOperatingMode() {
