@@ -20,13 +20,18 @@ class BruteforceMachine implements Machine {
     }
 
     public void operate() throws IOException {
+        // TreeMap, содержащий варианты сдвига строки на разное кол-во позиций - "рейтинг" варианта
+        // Рейтинг строки на основе анализа кода с использованием regex-выражений
         Map<String, Integer> stringsRatings = new TreeMap<>();
 
+        // Создание объектов Path для исходного файла и файла для записи
         Path sourceFilePath = Path.of(opData.getOperatedFilePath());
         Path targetFilePath = Utils.createTargetFile(sourceFilePath.toString(), "BRUTEFORCED");
 
+        // Чтение содержимого одной строкой
         String fileContent = Files.readString(sourceFilePath).toUpperCase(new Locale("ru", "RU"));
 
+        // Получение вариантов строк путем сдвига на разное кол-во позиций
         for (int i = 1; i < SignsContainer.getSignsArraySize(); i++) {
             String newString = "";
 
@@ -39,12 +44,14 @@ class BruteforceMachine implements Machine {
 
         String result = null;
 
+        // Выбор варианта с максимальным рейтингом (наиболее вероятного варанта расшифрованной строки)
         for (Map.Entry<String, Integer> pair: stringsRatings.entrySet()) {
             if (pair.getValue() == maxRating) {
                 result = pair.getKey();
             }
         }
 
+        // Запись в целевой файл одной строкой
         Files.writeString(targetFilePath, result);
 
         System.out.println("File was decrypted");
@@ -53,6 +60,8 @@ class BruteforceMachine implements Machine {
 
     }
 
+
+    // Метод, определяющий "рейтинг" сток, путем анализа совпадений с regex-выражениями
     private int analyzeString(String analyzedString) {
         int rating = 0;
 

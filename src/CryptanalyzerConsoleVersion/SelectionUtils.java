@@ -46,7 +46,7 @@ class SelectionUtils {
     // Метод введения пути оперируемого файла
     static String getOperatedFilePath() throws IOException {
         String filePath = null;
-        System.out.println("Please, enter path of file to be operated");
+        System.out.println("Please, enter path of text file to be operated");
 
         while (true) {
             filePath = bReader.readLine();
